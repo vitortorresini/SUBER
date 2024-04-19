@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="style_pc.css">
+    <title> Suber </title>
 </head>
 <body>
-
     <header class="nav">
         <div class="left">
-            <img src="assets/logo.png" height="130vh" alt="logo">
+            <img src="assets/logo.png" height="130vh" class="logo-inc" alt="logo">
             <div class="botoes">
                 <p class="botao">Alugar</p>
                 <p class="botao">Viajar</p>
@@ -29,7 +30,7 @@
     <section class="sec-1">
         <div class="sec-1-left">
             <p class="title">Alugue quando quiser e pague de acordo com suas necessidades</p>
-            <p class="description">Ganhe dinheiro com dirigindo no horário que você definir. 
+            <p class="description">Ganhe dinheiro dirigindo no horário que você definir. 
                 Você pode escolher um carro alugado, de preço acessível, por meio do app da Suber.
             </p>
         </div>
@@ -43,15 +44,15 @@
 
         </div>
         <div class="sec-2-right">
-            <p class="title2">Vá a qualquer lugar com o app da Suber</p>
-            <p class="description2">Solicite uma viagem, entre no carro e relaxe.</p>
+            <p class="title2">Torne-se parceiro da Suber</p>
+            <p class="description2">Insira seus dados abaixo para juntar-se à nós.</p>
 
             <div class="inputs">
-                <input type="text" class="input" placeholder="Informe o local">
-                <input type="text" class="input" placeholder="Informe o destino">
+                <input type="text" id="nome-input" class="input" placeholder="Nome" required>
+                <input type="text" id="email-input" class="input" placeholder="E-mail" required>
             </div>
 
-            <button class="button-1" type="button">Ver preços</button>
+            <button class="button-1" id="botao" type="button">Juntar-se</button>
         </div>
     </section>
 
@@ -108,5 +109,8 @@
         </section>
 
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
